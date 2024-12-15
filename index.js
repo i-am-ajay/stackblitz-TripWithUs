@@ -287,7 +287,7 @@ app.get("/hotels/sort/rating",(req,res)=>{
 })
 
 // sorting hotels based on reviews
-app.get("/hotels/sort/review",(req,res)=>{
+app.get("/hotels/sort/reviews",(req,res)=>{
   let param = req.query.reviews;
   res.json({hotels:sorting(hotelsArray,"least-to-most",param,"reviews")})
 })
